@@ -1,10 +1,8 @@
-// JSFIDDLE - Allows us to test Html, Css, JavaScript code - https://jsfiddle.net/
+var greeting = "what's your age?";
+var age = prompt(greeting);
 
-//var name = prompt('What is your name?', 'Put your name in here'); 
-//"put your name in here" this displays in the prompt box
-/* this is not good practice as we are using string literal in the prompt function, instead 
- declare the separate variable and assign string literal to that.*/
-
-var greeting = 'What is your name?';
-var name = prompt(greeting);
-alert(name);
+if(age >= 21){
+	alert("you're buying the next round");
+}else{
+	alert("you're not quite old enough");
+}
