@@ -1,13 +1,14 @@
-var num = 1;
+//if else in while
+var x = 1;
 
-//prints numbers 1 to 10
-while(num <= 10){
-	console.log(num);
-	num++; //increments number by 1, same as (num =  num+1), we can also increment by 2 or any number , num = num+2;
-} 
+while(x <= 30){
+	if (x <= 18) {
+		console.log("No driving at ur age");
+	}else if(x <= 21){
+		console.log("No buying of drinks either");
+	}else{
+		console.log("You can drive and lots of other stuff");
+	}
 
-var num2 = 10
-while(num2 >= 0){
-	console.log(num2);
-	num2--; //prints 10 to 0
+	x++;
 }
