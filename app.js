@@ -1,14 +1,14 @@
-//if else in while
-var x = 1;
+var  x = prompt('Guess a number between 1 and 50');
 
-while(x <= 30){
-	if (x <= 18) {
-		console.log("No driving at ur age");
-	}else if(x <= 21){
-		console.log("No buying of drinks either");
+while(x != 'n' && x != 'N'){
+	if(x <= 24){
+		alert('Nope, guess higher');
+	}else if(x >= 26){
+		alert('Nope, guess lower');
 	}else{
-		console.log("You can drive and lots of other stuff");
+		alert('You got it!');
+		break;
 	}
 
-	x++;
+	x = prompt('Guess a number between 1 and 50 or type n to quit the game');
 }
