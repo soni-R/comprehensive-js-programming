@@ -1,14 +1,4 @@
-var  x = prompt('Guess a number between 1 and 50');
-
-while(x != 'n' && x != 'N'){
-	if(x <= 24){
-		alert('Nope, guess higher');
-	}else if(x >= 26){
-		alert('Nope, guess lower');
-	}else{
-		alert('You got it!');
-		break;
-	}
-
-	x = prompt('Guess a number between 1 and 50 or type n to quit the game');
+for(var i=1; i<=10; i++) // in place of x++ we can also use x = x+2 which increments by 2
+{
+	console.log(i);
 }
