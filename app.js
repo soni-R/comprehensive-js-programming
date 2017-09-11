@@ -1,10 +1,17 @@
-var fruits = new Array("Apple", "Kiwi", "Grapes", "Banana");
+var fruits = new Array("Apple", "Kiwi", "Grapes");
 
-var myItem = fruits[3]; // getting the array value and storing it in variable  
-alert(myItem);  //displaying value using alert
+alert(fruits.length); // returns number of items in an array
 
-fruits[0] = 'Peach'; //changing value
+alert(fruits.indexOf('Kiwi')); 
+
+var arrayLength = fruits.length;
+//alert(arrayLength);
 
 
-fruits = ["Mango", "Orange", "Strawberries"]; //this stmt completely overrides the array values 
-												// and display these values in console.
+
+var citys =["Hyderabad", "Mumbai", "Bangalore"];
+
+var arrayLength = citys.length;
+for(var i = 0; i < arrayLength; i++){
+	alert(citys[i]);
+}
