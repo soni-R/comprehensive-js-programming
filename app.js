@@ -54,3 +54,70 @@ food
 (7) ["Apple", "kiwi", "grapes", "Banana", "spinach", "carrots", "beans"]
 
 */
+
+/*
+food
+(7) ["Apple", "kiwi", "grapes", "Banana", "spinach", "carrots", "potato"]
+
+food.shift();  // shift() function will remove first value from array 
+"Apple"
+
+food
+(6) ["kiwi", "grapes", "Banana", "spinach", "carrots", "potato"]
+
+food.unshift('strawberries');  // ushift will add value at the begining of array
+7
+
+food
+(7) ["strawberries", "kiwi", "grapes", "Banana", "spinach", "carrots", "potato"]
+
+ var myItems = food.slice(0, 3);
+undefined
+
+myItems
+(3) ["Apple", "kiwi", "grapes"]
+
+food.slice(0, 2);
+(2) ["Apple", "kiwi"]
+
+food.slice(-1, -3);
+[]length: 0__proto__: Array(0)
+
+food.slice(-3, -1);
+(2) ["spinach", "carrots"]
+
+food.slice(-3, -2);
+["spinach"]
+
+food.slice(-3, -4);
+[]
+
+food.slice(-4, -3);
+["Banana"]
+
+food
+(7) ["Apple", "kiwi", "grapes", "Banana", "spinach", "carrots", "potato"]
+
+food.sort() //sorts in alphabetical order
+(7) ["Apple", "Banana", "carrots", "grapes", "kiwi", "potato", "spinach"]
+
+food.sort().reverse();
+(7) ["spinach", "potato", "kiwi", "grapes", "carrots", "Banana", "Apple"]
+
+food
+(7) ["spinach", "potato", "kiwi", "grapes", "carrots", "Banana", "Apple"]
+
+food.sort();
+(7) ["Apple", "Banana", "carrots", "grapes", "kiwi", "potato", "spinach"]
+
+food.splice(2, 0, 'pears'); //splice() removes array item and replace it with specified value or values
+[]
+food
+(8) ["Apple", "Banana", "pears", "carrots", "grapes", "kiwi", "potato", "spinach"]
+
+food.splice(6,1,'mango','tomato');
+["potato"]
+
+food
+(9) ["Apple", "Banana", "pears", "carrots", "grapes", "kiwi", "mango", "tomato", "spinach"]
+*/
