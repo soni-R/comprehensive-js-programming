@@ -1,17 +1,56 @@
-var students = new Array();
-var grades = new Array();
-var i = 'y';
+var cars = ['SUV', 'Honda', 'Swift', 'BMW'];
 
-while(i != 'n' && i != 'N'){
-	var setStudent = prompt('Student Name:');
-	students.push(setStudent);
 
-	var setGrade = prompt('Grade:');
-	grades.push(setGrade);
+/* in console
+cars
+(4) ["SUV", "Honda", "Swift", "BMW"]
 
-	i = prompt("would you like to add another entry? y for yes, n for no");
-}
+cars.toString();
+"SUV,Honda,Swift,BMW"
 
-for( var j = 0; j < students.length; j++){
-	console.log(students[j] + " scored a " + grades[j] + " on the exam ");
-}
+cars.join(" ");
+"SUV Honda Swift BMW"
+
+cars.join(", ");
+"SUV, Honda, Swift, BMW"
+
+var myVariable = cars.join(", ");
+undefined
+
+myVariable;
+"SUV, Honda, Swift, BMW"
+
+*/
+
+//to concat two arrays
+var fruits = new Array("Apple", "kiwi", "grapes", "Banana");
+var veggies = ['spinach', 'carrots', 'potato'];
+/*
+fruits
+(4) ["Apple", "kiwi", "grapes", "Banana"]
+
+veggies
+(3) ["spinach", "carrots", "potato"]
+
+var food = fruits.concat(veggies);
+undefined
+
+food
+(7) ["Apple", "kiwi", "grapes", "Banana", "spinach", "carrots", "potato"]
+
+//to reverse the array values
+food.reverse();
+(7) ["potato", "carrots", "spinach", "Banana", "grapes", "kiwi", "Apple"]
+
+food
+(7) ["Apple", "kiwi", "grapes", "Banana", "spinach", "carrots", "potato"]
+
+food.pop(); //pop() removes last array value
+"potato"
+
+food.push('beans');
+7
+food
+(7) ["Apple", "kiwi", "grapes", "Banana", "spinach", "carrots", "beans"]
+
+*/
