@@ -1,17 +1,17 @@
-var fruits = new Array("Apple", "Kiwi", "Grapes");
+var students = new Array();
+var grades = new Array();
+var i = 'y';
 
-alert(fruits.length); // returns number of items in an array
+while(i != 'n' && i != 'N'){
+	var setStudent = prompt('Student Name:');
+	students.push(setStudent);
 
-alert(fruits.indexOf('Kiwi')); 
+	var setGrade = prompt('Grade:');
+	grades.push(setGrade);
 
-var arrayLength = fruits.length;
-//alert(arrayLength);
+	i = prompt("would you like to add another entry? y for yes, n for no");
+}
 
-
-
-var citys =["Hyderabad", "Mumbai", "Bangalore"];
-
-var arrayLength = citys.length;
-for(var i = 0; i < arrayLength; i++){
-	alert(citys[i]);
+for( var j = 0; j < students.length; j++){
+	console.log(students[j] + " scored a " + grades[j] + " on the exam ");
 }
