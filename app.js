@@ -1,17 +1,27 @@
-//program to accept values from user through prompt and display values in console
+//Creating objects
 
-function billing() {
+/*
+car = new object();
+car.make = "Toyota";
+car.model "Camry";
+car.year = 2017;
+car.color = "white";
+*/
 
-	var myRecord = 1;
-	var recordArray = [];
+// other way of creating objects
 
-	for(myRecord; myRecord <= 10; myRecord++){
-
-		var num = prompt('Please enter record # ' + myRecord);
-		recordArray.push(num);
-	}
-
-	return recordArray;
+car  = {
+	make : "Maruti",
+	model:"swift",
+	year: 2017,
+	color:"silver"
 }
 
-console.log(billing());
+//accessing the values and assigning them to a variable
+
+var make = car.make;
+var model = car.model;
+var year = car.year;
+var color = car.color;
+
+alert("Your " + make + " " + model + " is a " + year + " and has a color of " + color);
