@@ -1,27 +1,26 @@
-//Creating objects
+function car(make, model, year, color, damage)
+{
+	this.make = make;
+	this.model = model;
+	this.year = year;
+	this.color = color;
+	this.damage = damage;
 
-/*
-car = new object();
-car.make = "Toyota";
-car.model "Camry";
-car.year = 2017;
-car.color = "white";
-*/
+	this.setDamage = setDamage;
+	function setDamage(newstatus)
+	{
+		this.damage = newstatus;
+	};
 
-// other way of creating objects
-
-car  = {
-	make : "Maruti",
-	model:"swift",
-	year: 2017,
-	color:"silver"
+	this.getDamage = getDamage;
+	function getDamage()
+	{
+		return this.damage;
+	}
 }
 
-//accessing the values and assigning them to a variable
+myCar = new car("Toyota", "camry", 2017, "white", null);
+var getPrompt = prompt("what is the updated damage on the car?");
 
-var make = car.make;
-var model = car.model;
-var year = car.year;
-var color = car.color;
-
-alert("Your " + make + " " + model + " is a " + year + " and has a color of " + color);
+myCar.setDamage(getPrompt);
+alert(myCar.getDamage() + " has been added to the history");
