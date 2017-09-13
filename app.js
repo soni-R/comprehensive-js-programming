@@ -1,17 +1,17 @@
-function myFunction(num1, num2){
-	return num1 * num2;
+//program to accept values from user through prompt and display values in console
+
+function billing() {
+
+	var myRecord = 1;
+	var recordArray = [];
+
+	for(myRecord; myRecord <= 10; myRecord++){
+
+		var num = prompt('Please enter record # ' + myRecord);
+		recordArray.push(num);
+	}
+
+	return recordArray;
 }
 
-var myVar = myFunction(10, 5);
-
-alert(myVar);
-
-
-//function without passing any parameters
-function myFunction2(){
-	return "you have selected my function";
-}
-
-var myVar2 = myFunction2();
-
-alert(myVar2);
+console.log(billing());
